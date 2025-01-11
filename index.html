@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+</head>
+<body>
+   
+
+    <!-- Login Form -->
+    <div id="login-form">
+        <h2>Firebase Multi-Factor Authentication</h2>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <!-- Phone Number Verification -->
+    <div id="phone-form" style="display:none;">
+        <h3>Verify Phone Number</h3>
+        <div id="recaptcha-container"></div>
+        <input type="text" id="phone" placeholder="Phone Number" required><br>
+        <button id="sendCodeBtn">Send Verification Code</button><br>
+        <input type="text" id="verificationCode" placeholder="Enter Code" required><br>
+        <button id="verifyCodeBtn">Verify Code</button>
+    </div>
+
+    <script type="module" src="script.js">
+        </script>
+</body>
+</html>
